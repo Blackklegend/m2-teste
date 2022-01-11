@@ -30,17 +30,15 @@ const M2_Usuarios = database.define('m2_usuarios', {
         type: Sequelize.CHAR(150),
         allowNull: false
     },
-    login: {
-        type: Sequelize.CHAR(30),
-    },
+    login: Sequelize.CHAR(30),
     idequipe: {
         type: Sequelize.INTEGER,
-        references: 'equipes',
-        referencesKey: 'idequipe'
+        references: {
+            model: 'equipes',
+            key: 'idequipe'
+        }
     },
-    ativo: {
-        type: Sequelize.INTEGER
-    }
+    ativo: Sequelize.INTEGER
 })
 
 M2_Equipes.hasOne(M2_Usuarios)

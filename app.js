@@ -50,11 +50,10 @@ app.use(function(err, req, res, next) {
   }
 })();
 
-(async () => {
-  const database = require('./database/db');
-  const Tabelas = require('./database/tabelas');
+// (async () => {
+//   const teste = require('./database/CRUD')
 
-})();
-
+//   await teste.createUser();
+// })();
 
 module.exports = app;
