@@ -1,6 +1,6 @@
 # m2-teste
 
-# What is it?
+## What is it?
 Database manipulation project (CRUD), using Sequelize and sqlite3 via nodejs, in a docker container. Done as a recruiting test.  
 Unfinished at the moment.
 
